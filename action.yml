@@ -8,4 +8,4 @@ runs:
   steps:
     - name: Download InnoSetup
       shell: pwsh
-      run: "pwsh -File entrypoint.ps1"
+      run: "${{ github.action_path }}/entrypoint.ps1"
