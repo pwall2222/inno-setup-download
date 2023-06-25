@@ -35,4 +35,4 @@ Invoke-WebRequest -URI https://jrsoftware.org/download.php/iscrypt.dll -OutFile 
 
 
 Write-Host "InnoSetup: Adding InnoSetup to path"
-$env:Path += ";$(Get-Location)\inno"
+Add-Content $Env:GITHUB_PATH "$(Get-Location)\inno"
