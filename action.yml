@@ -8,4 +8,4 @@ runs:
   steps:
     - name: Download InnoSetup
       shell: pwsh
-      run: "pwsh ./entrypoint.ps1"
+      run: "pwsh -File entrypoint.ps1"
