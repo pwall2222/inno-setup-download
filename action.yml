@@ -1,0 +1,8 @@
+name: InnoSetup
+description: Sets up latest version of InnoSetup and adds it to path
+runs:
+  using: composite
+  steps:
+    - name: Download InnoSetup
+      shell: pwsh
+      run: "pwsh ./entrypoint.ps1"
