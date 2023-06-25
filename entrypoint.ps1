@@ -1,3 +1,5 @@
+Set-Loaction $Env:TEMP
+
 Write-Host "InnoSetup: Getting lastest innoextract release"
 $extract_release = Invoke-WebRequest https://api.github.com/repos/dscharrer/innoextract/releases/latest | ConvertFrom-Json
 
