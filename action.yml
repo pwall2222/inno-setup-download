@@ -1,5 +1,8 @@
 name: inno-setup-download
 description: Sets up latest version of InnoSetup and adds it to path
+branding:
+  color: yellow
+  icon: arrow-down-circle
 runs:
   using: composite
   steps:
