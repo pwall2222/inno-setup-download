@@ -1,4 +1,4 @@
-name: InnoSetup
+name: inno-setup-download
 description: Sets up latest version of InnoSetup and adds it to path
 runs:
   using: composite
