@@ -26,7 +26,7 @@ Expand-Archive innoextract.zip -DestinationPath innoextract
 Set-Alias -Name Inno-Extract -Value "$(Get-Location)\innoextract\innoextract.exe"
 
 Write-Host "InnoSetup: Downloading InnoSetup executable"
-Invoke-WebRequest -URI https://jrsoftware.org/download.php/is.exe -OutFile inno.exe
+Invoke-WebRequest -URI https://files.jrsoftware.org/is/6/innosetup-6.0.0.exe -OutFile inno.exe
 
 Write-Host "InnoSetup: Extracting InnoSetup"
 Inno-Extract inno.exe --output-dir ./ --include app
