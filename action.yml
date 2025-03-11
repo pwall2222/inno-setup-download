@@ -1,10 +1,17 @@
 name: inno-setup-download
 description: Sets up latest version of InnoSetup and adds it to path
+inputs:
+  version:
+    description: 'InnoSetup Version'
+    required: false
+    default: '6.2.2'
 branding:
   color: yellow
   icon: arrow-down-circle
 runs:
   using: composite
+  env: 
+    IS_VERSION: ${{ inputs.version }}
   steps:
     - name: Download InnoSetup
       shell: pwsh
