@@ -10,6 +10,8 @@ branding:
   icon: arrow-down-circle
 runs:
   using: composite
+  env: 
+    IS_VERSION: ${{ inputs.version }}
   steps:
     - name: Download InnoSetup
       shell: pwsh
