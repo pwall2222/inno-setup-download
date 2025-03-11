@@ -4,7 +4,7 @@ inputs:
   version:
     description: 'InnoSetup Version'
     required: false
-    default: '6.3.3'
+    default: '6.2.2'
 branding:
   color: yellow
   icon: arrow-down-circle
