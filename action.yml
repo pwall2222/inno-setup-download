@@ -10,9 +10,9 @@ branding:
   icon: arrow-down-circle
 runs:
   using: composite
-  env: 
-    IS_VERSION: ${{ inputs.version }}
   steps:
     - name: Download InnoSetup
       shell: pwsh
       run: "${{ github.action_path }}/entrypoint.ps1"
+      env:
+        IS_VERSION: ${{ inputs.version }}
